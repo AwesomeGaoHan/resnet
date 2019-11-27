@@ -59,7 +59,7 @@ def main():
                 total_num += x.size(0)
 
             acc = total_correct / total_num
-            print('epoch:', epoch, 'acc:', acc)
+            print('epoch:', epoch, 'acc:', acc)  # 这是整个epoch的acc
 
 
 if __name__ == '__main__':
