@@ -31,7 +31,7 @@ class Lenet5(nn.Module):
 
         self.criteon = nn.CrossEntropyLoss()
 
-    def forward(self, x):
+    def forward(self, x): #
         batchsz = x.size(0)
         x = self.conv_unit(x)
         # [b,3,32,32] => [b,16,5,5]

@@ -49,7 +49,7 @@ def main():
         model.eval()
         with torch.no_grad():
             total_correct = 0
-            total_num = 0
+            total_num = 0  #
             for x, label in cifar_test:
                 x, label = x.to(device), label.to(device)
 

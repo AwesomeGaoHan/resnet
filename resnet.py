@@ -57,7 +57,7 @@ class ResNet18(nn.Module):
 
         # print('after conv:', x.shape)
 
-        x = F.adaptive_avg_pool2d(x, [1, 1])
+        x = F.adaptive_avg_pool2d(x, [1, 1]) #
         # print('after pool:', x.shape)
         x = x.view(x.size(0), -1)
 
